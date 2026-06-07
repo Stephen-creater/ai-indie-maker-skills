@@ -4,6 +4,8 @@
 
 它不是逐字稿，也不是课程笔记，而是把嘉宾的实战经验压缩成可直接调用的工作流：当你要选品、搭技术栈、写 AGENTS.md、做 landing page、验证分发、计算 AI SaaS 成本、上线检查或判断合伙风险时，可以直接让 AI 使用对应 skill。
 
+推荐先读 [docs/skill-map.md](docs/skill-map.md)，它按真实项目顺序说明什么时候调用哪个 skill。
+
 ## 核心判断
 
 - Build 只是独立开发的一小环，Distribution 和持续迭代同样关键。
@@ -35,6 +37,12 @@
 bash scripts/install.sh
 ```
 
+默认安装不会覆盖你本机已有的同名 skill。如需强制覆盖，执行：
+
+```bash
+bash scripts/install.sh --force
+```
+
 也可以手动复制：
 
 ```bash
@@ -61,5 +69,9 @@ cp -R skills/*/* ~/.codex/skills/
 - [source/slides/](source/slides/)：PPT 截图图片
 
 这些素材来自一次分享记录；如果后续要扩大传播，请确认分享者和相关参与者的授权边界。
+
+## License 边界
+
+`skills/`、`docs/`、`scripts/`、README 和仓库说明按 MIT License 发布。`source/` 中的录音文字稿和 PPT 截图只作为追溯材料收录，不自动按 MIT 重新授权；转载、再分发或商业使用前，请确认分享者和相关参与者授权。
 
 更多结构化蒸馏见 [docs/source-distillation.md](docs/source-distillation.md) 和 [docs/skill-map.md](docs/skill-map.md)。

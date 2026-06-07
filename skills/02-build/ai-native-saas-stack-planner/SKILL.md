@@ -31,7 +31,6 @@ Use this as the baseline unless the product has a strong reason not to:
 
 ## Output Format
 
-```markdown
 ## Recommended Stack
 - App:
 - Database:
@@ -63,6 +62,12 @@ User -> UI -> API route/server action -> database/storage/AI provider -> billing
 - Testing:
 
 ## First Build Prompt
-Use this prompt with an AI coding agent:
-```
+Use this prompt structure with an AI coding agent:
 
+```text
+Build the MVP for <product name>.
+Use this stack: <frontend>, <database>, <auth>, <payment>, <storage>, <AI provider>, <deployment>.
+Read or create these docs first: AGENTS.md, docs/PRD.md, docs/DESIGN.md, docs/ARCHITECTURE.md, docs/TESTING.md.
+Implement only this first workflow: <workflow>.
+Before finalizing, run <checks> and report remaining risks.
+```

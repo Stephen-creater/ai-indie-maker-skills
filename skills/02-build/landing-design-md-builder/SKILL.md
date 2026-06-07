@@ -48,7 +48,6 @@ Default sections:
 
 ## Output Format
 
-```markdown
 ## DESIGN.md
 
 ### Visual Position
@@ -70,5 +69,10 @@ Default sections:
 - FAQ:
 
 ## Prompt For Coding Agent
+```text
+Create or update the landing page for <product name>.
+First read docs/DESIGN.md and preserve its typography, spacing, grid, colors, radius, and CTA hierarchy.
+Use this page structure: <hero>, <workflow/problem>, <feature blocks>, <demo/artifact>, <pricing or waitlist>, <FAQ>.
+Avoid generic AI visuals and vague copy; make every section show a concrete user workflow.
+Verify the page at desktop and mobile widths before finalizing.
 ```
-
